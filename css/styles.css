@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body,
+input,
+label {
+  font-family: 'Nunito', sans-serif;
+}
+
+section.intro {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(to right, #f50057, #ab2ac1);
+  background-position: center;
+
+  padding: 1rem;
+}
+
+section.intro h1 {
+  margin: 0 auto;
+  font-size: 2.5rem;
+}
+
+section.intro h2 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+section.intro .languages {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  padding-top: 1rem;
+}
+
+section.intro .languages .language-circle img {
+  width: 80px;
+}
+
+section.whoami {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem;
+}
+
+section.whoami .teacher {
+  width: 40%;
+  padding-left: 4rem;
+}
+
+section.whoami .teacher img {
+  width: 350px;
+  height: 350px;
+  border: 5px solid #ccc;
+}
+
+section.whoami .teacher h3 {
+  padding-left: 2.7rem;
+  padding-top: 0.6rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+section.whoami .teacher h4 {
+  padding-top: 0.6rem;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+section.whoami .teacher h5 {
+  padding-left: 5.2rem;
+  padding-top: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+section.whoami .description {
+  padding-right: 3rem;
+  width: 60%;
+}
+
+section.whoami .description p {
+  text-align: justify;
+}
+
+section.form-service {
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+
+  background-image: linear-gradient(to left, #f50057, #ab47bc);
+}
+
+section.form-service .message-service h1 {
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  color: black;
+}
+
+section.form-service .message-service h4 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: purple;
+}
+
+section.form-service .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.form-service .form form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+section.form-service .form form h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+section.form-service .form form span {
+  font-weight: lighter;
+}
+
+section.form-service .form form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+section.form-service .form form input[type='text'] {
+  width: 100%;
+  height: 38px;
+
+  padding: 0.6rem;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+section.form-service .form form input[type='email'] {
+  width: 100%;
+  height: 38px;
+  padding: 0.6rem;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+section.form-service .form form input[type='number'] {
+  width: 100%;
+  height: 38px;
+  padding: 0.6rem;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+section.form-service .form form span {
+  font-size: 0.8rem;
+  font-weight: lighter;
+
+  margin-top: 0.3rem;
+  opacity: 0.7;
+}
+
+section.form-service .form form input[type='submit'] {
+  width: 100%;
+  height: 40px;
+
+  border: 0;
+  border-radius: 20px;
+
+  margin-top: 1.5rem;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: purple;
+  color: white;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section.form-service .form form input[type='submit']:hover {
+  background-color: rgb(120, 64, 120);
+}
+
+section.form-service .form form input[type='text'],
+section.form-service .form form input[type='email'],
+section.form-service .form form input[type='number'] {
+  outline: 0;
+}
+
+section.vantagens {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+section.vantagens .offer {
+  padding-left: 5rem;
+}
+
+section.vantagens .offer h1 {
+  font-size: 1.7rem;
+}
+
+section.vantagens .offer button {
+  width: 180px;
+  height: 40px;
+
+  background: transparent;
+  border: 1px dashed black;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  margin-top: 1rem;
+
+  transition: background 0.2s, color 0.3s;
+}
+
+section.vantagens .offer button:hover {
+  background: black;
+  color: white;
+}
+
+section.vantagens .benefits {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  gap: 1rem;
+}
+
+section.vantagens .benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 2rem;
+  padding-right: 7rem;
+}
+
+section.vantagens .benefits h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+footer {
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+  background-image: linear-gradient(to bottom, #ffffff, #ebadf6);
+}
